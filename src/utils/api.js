@@ -1,9 +1,9 @@
 // src/utils/api.js
 import axios from "axios";
 
-// Use the deployed backend URL from .env, or fallback to localhost for dev
+// Use the deployed backend URL from .env, or fallback to Render URL in production
 const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+  import.meta.env.VITE_API_URL || "https://videoconferencebackend-1.onrender.com/api";
 
 // 🔹 Axios instance
 const api = axios.create({
